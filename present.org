@@ -1,0 +1,28 @@
+#+REVEAL_ROOT: ./
+#+REVEAL_THEME: black
+#+OPTIONS: toc:nil num:nil
+
+* Slide 1
+  #+ATTR_REVEAL: :frag (grow shrink roll-in fade-out appear)
+  - I will grow.
+  - I will shrink.
+  - I rolled in.
+  - I will fade out.
+  - I don't fragment.
+* Slide 2
+  * subslide 1
+  * subslide 2
+* Slide 3
+  #+ATTR_REVEAL: :frag roll-in
+  - list item 1
+  - list item 2
+    | a | b | c |
+    |---+---+---|
+    | 1 | 2 | 3 |
+    | 4 | 5 | 6 |
+    |---+---+---|
+* Slide 4
+  #+BEGIN_SRC python
+    def f(x):
+        return x + 4
+ #+END_SRC

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Jeong-Gyu Kim)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./css/reveal.css"/>
+
+<link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="author">Jeong-Gyu Kim</h2><p class="date">Created: 2017-02-19 Sun 01:54</p>
+</section>
+
+<section>
+<section id="slide-org84b0a6d">
+<h2 id="org84b0a6d">Slide 1</h2>
+<ul>
+<li class="fragment grow">I will grow.</li>
+<li class="fragment shrink">I will shrink.</li>
+<li class="fragment roll-in">I rolled in.</li>
+<li class="fragment fade-out">I will fade out.</li>
+<li class="fragment appear">I don't fragment.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2027f79">
+<h2 id="org2027f79">Slide 2</h2>
+<ul>
+<li>subslide 1</li>
+<li>subslide 2</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org5d82f6e">
+<h2 id="org5d82f6e">Slide 3</h2>
+<ul class="fragment roll-in">
+<li>list item 1</li>
+<li><p>
+list item 2
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">a</th>
+<th scope="col" class="org-right">b</th>
+<th scope="col" class="org-right">c</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-right">6</td>
+</tr>
+</tbody>
+</table></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org41af6c5">
+<h2 id="org41af6c5">Slide 4</h2>
+<div class="org-src-container">
+
+<pre  class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">f</span>(x):
+    <span style="color: #a020f0;">return</span> x + 4
+</pre>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
