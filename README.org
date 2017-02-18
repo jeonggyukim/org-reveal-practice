@@ -3,7 +3,11 @@
     #+BEGIN_EXAMPLE
       #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/       
     #+END_EXAMPLE
-  instead of #+REVEAL_ROOT: ./
+  instead of
+    #+BEGIN_EXAMPLE
+      #+REVEAL_ROOT: ./
+    #+END_EXAMPLE
+
 
   - References
     - [[https://www.youtube.com/watch?v=psDpCpcIVYs&list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&index=11][youtube tutorial by Mike Zamansky]]
