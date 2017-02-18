@@ -1,0 +1,2 @@
+* This repository is to test for creating html presentation using org-reveal
+  - Reference: [[https://www.youtube.com/watch?v=psDpCpcIVYs&list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg&index=11][tutorial]]
