@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="./css/reveal.css"/>
 
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="./css/theme/black.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,20 +18,21 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        link.href = './css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author">Jeong-Gyu Kim</h2><p class="date">Created: 2017-02-19 Sun 02:45</p>
+<section id="sec-title-slide"><h2 class="author">Jeong-Gyu Kim</h2><p class="date">Created: 2017-03-01 Wed 14:16</p>
 </section>
 
 <section>
-<section id="slide-org675429c">
-<h2 id="org675429c">Slide 1</h2>
+<section id="slide-orgbc82114">
+<h2 id="orgbc82114">Slide 1</h2>
 <ul>
 <li class="fragment grow">I will grow.</li>
 <li class="fragment shrink">I will shrink.</li>
@@ -43,8 +44,21 @@
 </section>
 </section>
 <section>
-<section id="slide-orgc94c236">
-<h2 id="orgc94c236">Slide 2</h2>
+<section id="slide-org5a6e280">
+<h2 id="org5a6e280">Slide 4</h2>
+<p>
+\(a + b = \)
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-python"><span style="color: #4c83ff;">def</span> <span style="color: #ff1493;">f</span>(x)&#57344;&#57345;&#57345;
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org1034678">
+<h2 id="org1034678">Slide 2</h2>
 <ul>
 <li>subslide 1</li>
 <li>subslide 2</li>
@@ -53,8 +67,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org89ffbff">
-<h2 id="org89ffbff">Slide 3</h2>
+<section id="slide-org5c1313e">
+<h2 id="org5c1313e">Slide 3</h2>
 <ul class="fragment roll-in">
 <li>list item 1</li>
 <li><p>
@@ -95,21 +109,10 @@ list item 2
 </ul>
 </section>
 </section>
-<section>
-<section id="slide-org43961da">
-<h2 id="org43961da">Slide 4</h2>
-<div class="org-src-container">
-
-<pre  class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">f</span>(x):
-    <span style="color: #a020f0;">return</span> x + 4
-</pre>
-</div>
-</section>
-</section>
 </div>
 </div>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -136,11 +139,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
